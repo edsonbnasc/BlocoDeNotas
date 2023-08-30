@@ -1,0 +1,20 @@
+@import url(../componentes/cabecalho/cabecalho.component.css);
+
+
+.area_texto_criada{
+  margin-top: 25px;
+  margin-left: 10rem;
+ display: flex;
+ justify-content: left;
+ align-items: center;
+}
+
+#nota_criada{
+background-color: bisque;
+resize: none;
+}
+.tipo1{
+  width: 100px;
+  height: 30px;
+  background-color:aqua;
+}

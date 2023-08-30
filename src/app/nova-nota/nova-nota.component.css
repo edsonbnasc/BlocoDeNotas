@@ -1,0 +1,17 @@
+@import url(../componentes/cabecalho/cabecalho.component.css);
+
+
+.area_texto{
+  margin-top: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#nota{
+background-color: bisque;
+width: 1198px;
+height: 314px;
+resize: none;
+}
+
