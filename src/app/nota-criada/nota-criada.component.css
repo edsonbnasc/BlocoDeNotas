@@ -4,9 +4,9 @@
 .area_texto_criada{
   margin-top: 25px;
   margin-left: 10rem;
- display: flex;
- justify-content: left;
- align-items: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 #nota_criada{

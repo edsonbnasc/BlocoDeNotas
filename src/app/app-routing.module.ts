@@ -2,12 +2,13 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NovaNotaComponent } from './nova-nota/nova-nota.component';
 import { NotaCriadaComponent } from './nota-criada/nota-criada.component';
-import { MenuComponent } from './menu/menu.component';
+
+import { CorpoComponent } from './corpo/corpo.component';
 
 const routes: Routes = [
   {
-    path:'menu',
-    component:MenuComponent
+    path:'corpo',
+    component:CorpoComponent
   },
 
   {
@@ -20,7 +21,7 @@ const routes: Routes = [
   },
   {
     path:'',
-    redirectTo:'',
+    redirectTo:'corpo',
     pathMatch:'full'
   }
 ];

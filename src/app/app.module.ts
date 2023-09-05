@@ -7,6 +7,8 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { NovaNotaComponent } from './nova-nota/nova-nota.component';
 import { MenuComponent } from './menu/menu.component';
 import { NotaCriadaComponent } from './nota-criada/nota-criada.component';
+import { CorpoComponent } from './corpo/corpo.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NotaCriadaComponent } from './nota-criada/nota-criada.component';
     CabecalhoComponent,
     MenuComponent,
     NovaNotaComponent,
-    NotaCriadaComponent
+    NotaCriadaComponent,
+    CorpoComponent,
+
   ],
   imports: [
     BrowserModule,

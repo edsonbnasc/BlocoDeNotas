@@ -1,0 +1,13 @@
+<main>
+  <ng-template #semnota>
+    <h1>sem nota</h1>
+  </ng-template>
+
+  <div *ngIf="listaNotas.length > 0, else semnota">
+
+    <div *ngFor="let nota of listaNotas">
+      <app-nota-criada [nota]="nota"></app-nota-criada>
+    </div>
+  </div>
+
+</main>
