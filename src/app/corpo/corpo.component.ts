@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Nota } from '../componentes/notas';
+import { NotaService } from '../componentes/nota.service';
 
 @Component({
   selector: 'app-corpo',
@@ -6,11 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./corpo.component.css']
 })
 export class CorpoComponent {
-  listaNotas = [
+  constructor(private service: NotaService){}
+
+  listaNotas:Nota[] = [
     {
       titulo:"Titulo 1",
-        conteudo: 'Angular é estranho',
-        tipo: 'tipo1'
+      conteudo: 'Angular é estranho',
+      tipo: 'tipo1'
     },
     {
       titulo:"Titulo 2",
@@ -18,5 +22,10 @@ export class CorpoComponent {
       tipo: 'tipo1'
     }
 ];
+ngOnInit():void{
+  this.service.listar().subscribe((listaNotas)=>{
+    this.listaNotas = listaNotas
+  })
+}
 }
 
