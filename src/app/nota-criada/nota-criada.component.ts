@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NotaCriadaComponent {
   @Input() nota = {
-    titulo:"teste",
+    
     conteudo: 'Angular é muito bom!',
     tipo: 'tipo1'
   }

@@ -12,12 +12,12 @@ export class CorpoComponent {
 
   listaNotas:Nota[] = [
     {
-      titulo:"Titulo 1",
+
       conteudo: 'Angular é estranho',
       tipo: 'tipo1'
     },
     {
-      titulo:"Titulo 2",
+      
       conteudo: 'Angular é estranho',
       tipo: 'tipo1'
     }

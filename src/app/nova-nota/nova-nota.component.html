@@ -1,7 +1,7 @@
 
     <main>
       <div class="area_texto">
-        <textarea name="" id="nota" cols="60" rows="15"></textarea>
+        <input type="textarea" [(ngModel)]="nota.conteudo" name="" id="nota" cols="60" rows="15">
       </div>
 
 
@@ -15,7 +15,7 @@
           <span>Excluir</span>
         </button>
 
-        <button routerLink="/nota-criada" class="card card-small">
+        <button (click)="criarNota()" class="card card-small">
           <img src="../../../assets/imagens/salva.png" alt="salvar">
           <span>Salvar</span>
         </button>

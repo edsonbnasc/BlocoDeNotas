@@ -15,4 +15,8 @@ export class NotaService {
   {
     return this.http.get<Nota[]>(this.API);  //retorna um array de notas, o tipo da variavel é
   }
+  criar(nota: Nota): Observable<Nota>{
+    return this.http.post<Nota>(this.API, nota)
+  }
+
 }
